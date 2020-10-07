@@ -1,0 +1,28 @@
+<header>
+    <h3 style="color:red">Delete Task</h3>
+</header>
+
+<form action="/delete/{{task._id}}" method="POST">
+    <div>
+        <label class="desc" for="title">Title</label>
+        <div>
+            <input id="title" name="title" type="text" class="field text fn" size="8" tabindex="1" autofocus="autofocus"
+                value="{{task.title}}" disabled />
+        </div>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend id="title5" class="desc">Status</legend>
+            <input id="status2" name="status" type="text" value="{{task.status}}" tabindex="3" disabled />
+    </div>
+    </fieldset>
+    </div>
+
+    <div>
+        <div>
+            <input class="deleteBtn" type="submit" value="Delete" />
+            <a class="button cancel" href="/">Cancel</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+<header>
+    <h3 style="color:rgb(27, 141, 235)">Edit Task</h3>
+</header>
+
+<form action="/edit/{{task._id}}" method="POST">
+    <div>
+        <label class="desc" for="title">Title</label>
+        <div>
+            <input id="title" name="title" type="text" class="field text fn" size="8" tabindex="1" autofocus="autofocus"
+                value="{{task.title}}" />
+        </div>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend id="title5" class="desc">Status</legend>
+            <div>
+                <input id="title" name="title" type="text" class="field text fn" size="8" tabindex="1"
+                    autofocus="autofocus" value="{{task.status}}" disabled />
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <div>
+            <input class="button" type="submit" value="Edit" />
+            <a class="button cancel" href="/">Cancel</a>
+        </div>
+    </div>
+</form>
